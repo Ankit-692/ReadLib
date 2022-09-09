@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block style %}<link rel="stylesheet" href="{% static 'RLibrary/signup.css' %}">{% endblock  %}
+{% block style %}<link rel="stylesheet" href="{% static '/RLibrary/signup.css' %}">{% endblock  %}
 
 {% block title %}
 Reader's Hub - Sign Up 
 {% endblock  %}
 {% block content %}
 <section class="vectors">
-    <img src="{% static "RLibrary/images/vector 1.png" %}" alt="">
-    <img src="{% static "RLibrary/images/vector 2.png" %}" alt="">
+    <img src="{% static "/RLibrary/images/vector 1.png" %}" alt="">
+    <img src="{% static "/RLibrary/images/vector 2.png" %}" alt="">
 </section>
 <form method='POST' class='upform'>
 {% csrf_token %}
