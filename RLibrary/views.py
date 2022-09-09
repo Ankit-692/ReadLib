@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 from googleapiclient.discovery import build
 from .models import Book
 from django.contrib import messages
+import os
 import environ
 env = environ.Env()
 environ.Env.read_env()
@@ -76,7 +77,7 @@ def userList(request,state = ""):
     
 @login_required(login_url="SignIn")
 def search(request):
-    API_KEY = env('Api_key')
+    API_KEY = os.environ['Api_key']
     service = build('books', 'v1', developerKey = API_KEY)
     if request.method == "GET":
         query = request.GET['Book']
