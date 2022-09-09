@@ -77,7 +77,7 @@ def userList(request,state = ""):
     
 @login_required(login_url="SignIn")
 def search(request):
-    API_KEY = os.environ['Api_key']
+    API_KEY = os.environ.get('Api_key',3)
     service = build('books', 'v1', developerKey = API_KEY)
     if request.method == "GET":
         query = request.GET['Book']
