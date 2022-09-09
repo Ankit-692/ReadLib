@@ -1,1 +1,1 @@
-web: gunicorn ReadLib.wsgi
+web: gunicorn readerslib.wsgi
