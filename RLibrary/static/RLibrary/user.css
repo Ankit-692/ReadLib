@@ -137,8 +137,16 @@ h1{
 }
 
 @media screen and (max-width:1385px) {
-    .del::before{
-        content: "\a";
-        white-space: pre;
+    @media screen and (max-width:1385px) and (min-width:720px){
+        .space::after{
+            content: "\A";
+            white-space: pre;
+        }
+    
+        .space::before{
+            content: "\A";
+            white-space: pre;
+        }
+        
     }
 }

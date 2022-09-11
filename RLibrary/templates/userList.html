@@ -32,6 +32,7 @@ Reader's Hub - User's List
             {% endif %}
             <p>[<b>{{book.state|upper}}</b>]</p>
             <a href="{% url 'update' book.id %}">UPDATE 🖋️</a>
+            <span class="space"></span>
             <a href="/delete/{{book.id}}" class="del">DELETE 🔻</a>
         </div>
     </div>
