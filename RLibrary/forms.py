@@ -8,3 +8,4 @@ class SignUpForm(forms.Form):
     Email = forms.EmailField(label="E-mail")
     password1 = forms.CharField(min_length=8, label="Create a Password", widget=forms.PasswordInput)
     password2 = forms.CharField(min_length=8, label="Confirm Password", widget=forms.PasswordInput)
+    
