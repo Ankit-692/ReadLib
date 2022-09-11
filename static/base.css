@@ -21,8 +21,8 @@ body{
 
 .userName p{
     position: absolute;
-    right: 100px;
-    top: 12px;
+    right: 10px;
+    top: 50px;
     font-weight: bold;
 }
 

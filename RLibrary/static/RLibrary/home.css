@@ -1,8 +1,8 @@
 
 .userList{
     position: absolute;
-    right: 230px;
-    top: 28px;
+    right: 120px;
+    top: 23px;
 }
 
 a{
@@ -127,6 +127,7 @@ a:hover{
         font-size: .7rem ;
         height: fit-content;
         padding: 10px;
+        position: fixed;
     }
 
     #books{

@@ -1,7 +1,7 @@
 .home{
     position: absolute;
-    right: 230px;
-    top: 28px;
+    right: 120px;
+    top: 23px;
 }
 a{
     text-decoration: none;
@@ -133,5 +133,12 @@ h1{
     
     .userName p{
         display: none;
+    }
+}
+
+@media screen and (max-width:1385px) {
+    .del::before{
+        content: "\a";
+        white-space: pre;
     }
 }

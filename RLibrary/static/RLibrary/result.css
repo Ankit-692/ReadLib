@@ -1,7 +1,7 @@
 .userList{
     position: absolute;
-    right: 230px;
-    top: 28px;
+    right: 120px;
+    top: 23px;
     margin: 0 6px;
 }
 
@@ -20,8 +20,8 @@ a:hover{
 }
 .home{
     position: absolute;
-    right: 300px;
-    top: 28px;
+    right: 190px;
+    top: 23px;
     margin: 0 20px;
 }
 
